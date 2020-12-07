@@ -1,2 +1,0 @@
-# Disease-Prediction-System
-This Project is predict the disease based on your Symptoms.This may be not 100% accurate because we didn't collect the information from the specialist.We collect all the indformation form google and other websites.Here ,the I use Html, CSS, JavaScript ,PHP ,MySql ,JQuery. .Before Enter to the project at first insert the database into the sql database .Database file is given inside the project . For admin pannel : Username: admin Password: Ab123456 For User pannel : Username: user Password:Ab123456
