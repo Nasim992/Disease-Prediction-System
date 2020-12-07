@@ -13,6 +13,7 @@ For Admin Login UserName: admin
 For User Login UserName: user
                Password:Ab123456
 
+###### Note: This Project is Not fully Responsive 
 
 #### Some Samples of this project is given below :
 
