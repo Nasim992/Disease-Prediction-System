@@ -1,0 +1,31 @@
+
+body {
+	background-color: #000;
+}
+html,
+body {
+	height: 100%;
+}
+.imagebg {
+	background-image:white;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-filter: blur(3px);
+  filter: blur(3px);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.form-container
+{
+	background-color: #fff;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    border-radius: 8px;	
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}

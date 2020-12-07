@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding :0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box; 
+  }
+  .container{
+  
+  background-image: url("../images/image1.jpg");
+  
+  height:100vh;
+  width: 100%;
+  
+  background-position: center;
+  
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  
+  text-align: center;
+  
+  }
+  .hompage
+  {
+    
+  display: block;
+    
+  padding: 250px;
+  }
+  .container h2{
+  color: white;
+  
+  font-size: 38px;
+  text-shadow: 2px 5px 10px rgb(0, 0, 0);
+  
+  }
+  .container p{
+  padding:20px;
+  color: white;
+    
+  font-size: 24px;
+  }
+  .container ul
+  {
+  
+  display: flex;
+  
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  }
+  .container ul li{
+  
+  list-style-type: none;
+  
+  padding: 6px;
+  }
+  .container ul li a{
+  
+  color: #041349;
+  
+  font-size: 19px;
+  
+  text-decoration: none;
+  
+  padding: 6px;
+  
+  display: block;
+  
+  font-weight: 800;
+  
+  }
+  .container ul li a:hover
+  {
+   color:white;
+  }
+  .container ul li button {background: #f1f1f1;border-radius: 19px;}
+  .container ul li button:hover{background: #05011d;border-radius: 22px;transition: 0.5s;}
+ .head-portion button{background: #13afb4;border-radius: 19px;}
+  .head-portion button:hover{background: #ffffff;border-radius: 22px;transition: 0.5s;}
+  
+/* --------------------------------
+Teerms heading 
+-----------------------------------
+*/
+
+  .teerms-heading h2{
+      text-align:center;
+      display:block;
+      padding:20px;
+      background-color:rgb(66, 141, 153);
+      color:rgb(3, 0, 0);
+      font-size:30px;
+      border-radius:20px;
+
+  }
+  .teerms-heading h2:hover{
+  
+       color:rgb(235, 217, 57);
+       transition:0.5s;
+  }
+  
+  /* --------------------------------
+teerms heading 
+-----------------------------------
+*/
+  .head-portion ul{
+  
+  text-align: center;
+  
+  /* display: block; */
+  }
+  .head-portion ul li{
+  
+  list-style-type: none;
+  
+  display: block;
+  
+  padding-top: 10px;
+  }
+  .head-portion ul li a{
+  
+  text-decoration: none;
+  
+  padding: 32px;
+
+  color:white;
+  
+  font-size: 38px;
+  
+  padding: 10px;
+   
+  font-weight:500px;
+
+  }
+  .head-portion ul li a:hover{
+      color:black;
+  }
+
+  /* --------------------------------
+Admin Head form section
+-----------------------------------
+*/
+.admin-head-portion{
+
+/* background-color: #e5f3f3; */
+
+display: block;
+
+text-align: center;
+
+border-radius: 20px;
+
+font-size: 22px;
+
+padding-top: 10px;
+
+padding: 86px;
+}
+.admin-head-portion input[type="number"]
+{
+
+/* text-align: center; */
+
+padding: 7px;
+
+/* padding: 9px 48px 10px; */
+
+background-color: #c9e3df;
+
+font-weight: 800;
+}
+.admin-head-portion input[type="text"]
+{
+
+padding: 7px;
+
+background-color: #c9e3df;
+
+font-weight: 800;
+
+/* padding: 9px 48px 10px; */
+
+display: inline-block;
+}
+.admin-head-portion input[type="submit"]
+{
+
+}
+.admin-head-portion button
+{
+
+background: #e6e6ed;
+
+font-size: 20px;
+
+padding: 2px 28px 0px;
+
+border-radius: 43px;
+
+color: black;
+
+font-weight: 800;
+}
+.admin-head-portion button a{
+    
+text-decoration: none;
+    
+color: black;
+}
+.admin-head-portion p
+{
+
+
+}
+.admin-head-message {
+    background-color:green;
+}
+
+
+.admin_head_choose
+{
+ text-align:center;
+ padding: 73px;
+ font-size: 63px;
+ /* color: #0c510c; */
+ font-weight: 900;
+}
+.admin_head_choose ul{
+   text-align:center;
+   /* display: inline-table; */
+}
+.admin_head_choose ul li{
+  
+list-style-type: none;
+  
+color: #1c718b;
+}
+.admin_head_choose ul li a{
+  text-decoration:none;
+  font-size: 47px;
+  font-weight: 900;
+}
+.admin_head_choose ul li a button{
+
+font-size: 22px;
+
+font-weight: 900;
+
+background-color: #5fbacf;
+
+transition: 0.4s;
+
+cursor:pointer;
+
+}
+
+  /* --------------------------------
+Admin Head from portion 
+-----------------------------------
+*/
+
+
+.teerms-body
+{
+    align-items: center;;
+}
+
+
+
+
