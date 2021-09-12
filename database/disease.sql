@@ -27,19 +27,19 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `admin`
 --
-
-CREATE TABLE `admin` (
-  `id` int(11) NOT NULL,
-  `UserName` varchar(100) DEFAULT NULL,
-  `Password` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+--
+--CREATE TABLE `admin` (
+ -- `id` int(11) NOT NULL,
+ -- `UserName` varchar(100) DEFAULT NULL,
+  --`Password` varchar(100) DEFAULT NULL
+--) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`id`, `UserName`, `Password`) VALUES
-(6, 'Admin', 'a0a475cf454cf9a06979034098167b9e');
+--INSERT INTO `admin` (`id`, `UserName`, `Password`) VALUES
+--(6, 'Admin', 'a0a475cf454cf9a06979034098167b9e');
 
 -- --------------------------------------------------------
 
@@ -47,18 +47,18 @@ INSERT INTO `admin` (`id`, `UserName`, `Password`) VALUES
 -- Table structure for table `disease_tb`
 --
 
-CREATE TABLE `disease_tb` (
-  `id` int(11) NOT NULL,
-  `disease_id` int(50) NOT NULL,
-  `disease_name` varchar(100) NOT NULL,
-  `cause` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+--CREATE TABLE `disease_tb` (
+ -- `id` int(11) NOT NULL,
+ -- `disease_id` int(50) NOT NULL,
+ -- `disease_name` varchar(100) NOT NULL,
+ -- `cause` varchar(255) DEFAULT NULL
+--) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `disease_tb`
 --
 
-INSERT INTO `disease_tb` (`id`, `disease_id`, `disease_name`, `cause`) VALUES
+--INSERT INTO `disease_tb` (`id`, `disease_id`, `disease_name`, `cause`) VALUES
 (1, 1, 'Cataracts', 'Build Up Protein in an Eye .Present From Birth .Eye injuries .If not treated properly cause Blindness.'),
 (2, 2, 'trachoma', 'Water shortage , poor sanitation and infestation of files . Repeated infections with bacteria known as chamydia travhoma .'),
 (3, 3, 'Keratotoconjunctives sicca ', 'Dry eyes ,causes Eye infections .'),
@@ -204,7 +204,7 @@ INSERT INTO `disease_tb` (`id`, `disease_id`, `disease_name`, `cause`) VALUES
 -- Table structure for table `symptoms_tb`
 --
 
-CREATE TABLE `symptoms_tb` (
+--CREATE TABLE `symptoms_tb` (
   `id` int(11) NOT NULL,
   `symptoms_id` int(50) NOT NULL,
   `symptoms_name` varchar(100) NOT NULL,
@@ -215,7 +215,7 @@ CREATE TABLE `symptoms_tb` (
 -- Dumping data for table `symptoms_tb`
 --
 
-INSERT INTO `symptoms_tb` (`id`, `symptoms_id`, `symptoms_name`, `disease_id`) VALUES
+--INSERT INTO `symptoms_tb` (`id`, `symptoms_id`, `symptoms_name`, `disease_id`) VALUES
 (1, 1, 'Double vision in  a single eye ', 1),
 (2, 2, 'Irritated eyes ', 2),
 (3, 3, 'Fatigue eyes ', 3),
@@ -617,7 +617,7 @@ INSERT INTO `symptoms_tb` (`id`, `symptoms_id`, `symptoms_name`, `disease_id`) V
 -- Table structure for table `user`
 --
 
-CREATE TABLE `user` (
+--CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `user_name` varchar(100) NOT NULL,
   `password` varchar(255) DEFAULT NULL,
@@ -630,7 +630,7 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `user_name`, `password`, `contact`, `reg_date`, `result`) VALUES
+--INSERT INTO `user` (`id`, `user_name`, `password`, `contact`, `reg_date`, `result`) VALUES
 (15, 'user', 'a0a475cf454cf9a06979034098167b9e', 'mdnasim6416@gmail.com', '2020-04-04 14:00:21', 66),
 (16, 'Nasim92', '5ec0b6355d9a5fdb2996c5b9950cc1c6', 'princeneo58@gmail.com', '2020-04-09 13:34:26', 50);
 
@@ -640,7 +640,7 @@ INSERT INTO `user` (`id`, `user_name`, `password`, `contact`, `reg_date`, `resul
 -- Table structure for table `user_result`
 --
 
-CREATE TABLE `user_result` (
+--CREATE TABLE `user_result` (
   `id` int(11) NOT NULL,
   `experience` varchar(255) NOT NULL,
   `comments` varchar(255) NOT NULL,
@@ -653,7 +653,7 @@ CREATE TABLE `user_result` (
 -- Dumping data for table `user_result`
 --
 
-INSERT INTO `user_result` (`id`, `experience`, `comments`, `name`, `email`, `c_date`) VALUES
+--INSERT INTO `user_result` (`id`, `experience`, `comments`, `name`, `email`, `c_date`) VALUES
 (21, 'average', 'Great ', 'Cris Gayle', 'Cris@gmail.com', '2020-04-04 14:03:10');
 
 --
@@ -663,34 +663,34 @@ INSERT INTO `user_result` (`id`, `experience`, `comments`, `name`, `email`, `c_d
 --
 -- Indexes for table `admin`
 --
-ALTER TABLE `admin`
+--ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `UserName` (`UserName`);
 
 --
 -- Indexes for table `disease_tb`
 --
-ALTER TABLE `disease_tb`
+--ALTER TABLE `disease_tb`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `disease_id` (`disease_id`);
 
 --
 -- Indexes for table `symptoms_tb`
 --
-ALTER TABLE `symptoms_tb`
+--ALTER TABLE `symptoms_tb`
   ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `user`
 --
-ALTER TABLE `user`
+--ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `user_name` (`user_name`);
 
 --
 -- Indexes for table `user_result`
 --
-ALTER TABLE `user_result`
+--ALTER TABLE `user_result`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -700,31 +700,31 @@ ALTER TABLE `user_result`
 --
 -- AUTO_INCREMENT for table `admin`
 --
-ALTER TABLE `admin`
+--ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `disease_tb`
 --
-ALTER TABLE `disease_tb`
+--ALTER TABLE `disease_tb`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=139;
 
 --
 -- AUTO_INCREMENT for table `symptoms_tb`
 --
-ALTER TABLE `symptoms_tb`
+--ALTER TABLE `symptoms_tb`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=398;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
-ALTER TABLE `user`
+--ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `user_result`
 --
-ALTER TABLE `user_result`
+--ALTER TABLE `user_result`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
